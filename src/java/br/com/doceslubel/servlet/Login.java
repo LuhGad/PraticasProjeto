@@ -50,7 +50,16 @@ public class Login extends HttpServlet {
                 if(usuario != null){
                     System.out.println("Setando usuario na sessao");
                     request.getSession().setAttribute("usuario", usuario);
-                    response.sendRedirect("logado.jsp");
+                    //response.sendRedirect("logado.jsp");
+        
+                    if (usuario.getTipo().equals("comum")) {
+                        response.sendRedirect("comum.jsp");
+                    
+                    }
+                    else {
+                        response.sendRedirect("adm.jsp");
+                    }
+                    
                 }
                 else {
                 response.sendRedirect("index.jsp");
