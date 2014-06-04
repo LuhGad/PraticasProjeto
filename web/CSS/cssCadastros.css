@@ -1,0 +1,54 @@
+@CHARSET "ISO-8859-1";
+
+* {
+	font:"Trebuchet MS", Arial, Helvetica, sans-serife;
+	margin:10;
+	padding:10;
+}
+html, body {
+	height: 100%;
+	font-family: "Segoe UI";
+}
+
+body > section {height: 70%;display: table;width: 100%;}
+#cadastro{
+	width: 30%;
+	height: 30%;
+	margin: 5% 35% 5% 35%;
+}
+
+#cadastro input{
+	width: 120%;
+	padding: 5%;
+	margin-bottom: 10px;
+	
+}
+
+#cadastro textarea{
+	width: 130%;
+	margin-bottom: 50px;
+	
+}
+
+
+
+#cadastro input[type='submit'], button{
+	width: 50%;
+	       
+        margin: 5% 45% 5% 25%;
+}
+
+fieldset{
+padding: 10%;
+font-family:"Segoe UI";
+font-size:16px;
+border: none;
+}
+fieldset legend {
+	color: #FFD700;
+	width: 100%;
+	font-size: 24px;
+	text-align: center;
+        font-style: bold;
+}
+
