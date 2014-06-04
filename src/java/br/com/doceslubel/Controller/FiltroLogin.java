@@ -80,6 +80,7 @@ public class FiltroLogin implements Filter {
                   ((HttpServletResponse)res).sendRedirect("/projeto-doces-lubel/index.jsp");
             }else{
                   chain.doFilter(req, res);
+ 
             }
       }
      

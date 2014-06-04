@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Luciana
  */
-public class ListarProdutos extends HttpServlet {
+public class ListarReceitas extends HttpServlet {
  @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp); //To change body of generated methods, choose Tools | Templates.
@@ -36,14 +36,15 @@ public class ListarProdutos extends HttpServlet {
         try {
             ReceitasDao dao = new ReceitasDao();
             List<Receita> receitas = new ArrayList<Receita>();
-            receitas = dao.listarProdutos();
+            receitas = dao.listarReceitas();
             
             req.getSession().setAttribute("receitas", receitas);
             
             
         } catch (SQLException ex) {
-            Logger.getLogger(ListarProdutos.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ListarReceitas.class.getName()).log(Level.SEVERE, null, ex);
         }
         
 }
+  
 }

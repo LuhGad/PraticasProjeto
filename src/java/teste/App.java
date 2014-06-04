@@ -50,7 +50,7 @@ public class App {
         
         ReceitasDao receitaDao = new ReceitasDao();
         List<Receita> receitas = new ArrayList<Receita>();
-        receitas = receitaDao.listarProdutos();
+        receitas = receitaDao.listarReceitas();
         
         for(Receita r : receitas){
             System.out.println(r.toString());

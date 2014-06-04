@@ -128,7 +128,7 @@ public class ReceitasDao {
 		return receita;
 
 	}   
-       public List<Receita> listarProdutos() throws SQLException {
+       public List<Receita> listarReceitas() throws SQLException {
 
         ArrayList<Receita> produto = new ArrayList<Receita>();
         String sql = "SELECT * FROM receitas ";
